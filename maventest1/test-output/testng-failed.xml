@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Listeners(failed)">
+    <classes>
+      <class name="com.testclasses.HomePageRediffTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="logIn" invocation-numbers="0"/>
+          <include name="invokbrowser"/>
+        </methods>
+      </class> <!-- com.testclasses.HomePageRediffTest -->
+    </classes>
+  </test> <!-- Listeners(failed) -->
+</suite> <!-- Failed suite [Suite] -->

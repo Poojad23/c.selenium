@@ -1,0 +1,33 @@
+import java.util.Arrays;
+
+public class ReverseEachWordInString {
+	public static void main(String[] args) {
+		String str="Welcome to Java Programming";
+		System.out.println(str);
+		String[] words = str.split(" ");
+		//System.out.println(Arrays.toString(words));
+		String revStr="/n";
+		
+		for(String word:words) {
+			String revWord="";
+			for(int i=word.length()-1;i>=0;i--) {
+				revWord=revWord+word.charAt(i);
+			}
+			revStr=revStr+revWord+" ";
+		}
+		
+		 //String[] temp = pattern.split(str);
+	        //String result = "";
+	 
+	        // Iterate over the temp array and store
+	        // the string in reverse order.
+	        for (int i = 0; i < words.length; i++) {
+	            if (i == words.length - 1)
+	            	revStr = words[i] + revStr;
+	            else
+	            	revStr = " " + words[i] + revStr;
+	        }
+	        //return revStr;
+		System.out.println(revStr);
+	}
+}

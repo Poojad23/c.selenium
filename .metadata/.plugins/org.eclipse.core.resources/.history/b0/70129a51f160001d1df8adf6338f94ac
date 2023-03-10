@@ -1,0 +1,24 @@
+package seleniumProgram;
+
+public class DragandDrop {
+	System.setProperty("webdriver.chrome.driver", "E:\\tools\\Crome\\chromedriver.exe");
+
+	WebDriver driver = new ChromeDriver();
+	driver.manage().window().maximize();
+
+	driver.get("https://www.globalsqa.com/demo-site/draganddrop/");
+
+
+	WebElement iframe = driver.findElement(By.xpath("//*[@class='demo-frame lazyloaded']"));
+
+	driver.switchTo().frame(iframe);
+
+	WebElement source = driver.findElement(By.xpath("//*[@alt='The peaks of High Tatras']"));
+
+	WebElement target = driver.findElement(By.xpath("//*[@id='trash']"));
+
+	Actions act= new Actions(driver);
+
+	//move image to the trash
+	act.dragAndDrop(source, target).build().perform();
+}

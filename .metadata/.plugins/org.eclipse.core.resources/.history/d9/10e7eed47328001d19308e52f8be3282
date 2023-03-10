@@ -1,0 +1,8 @@
+package com.inheritance;
+
+public class ChildClass {
+	
+	ChildClass(){
+		System.out.println("Child class constructor");
+	}
+}

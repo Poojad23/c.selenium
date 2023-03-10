@@ -1,0 +1,14 @@
+package com.inheritance;
+
+public class SingleA {
+	int a = 5;
+	int b = 10;
+	int m = 90;
+	int n = 80;
+	
+	void m1() {
+		
+		System.out.println("M1 method call in parent class");
+	}
+	
+}

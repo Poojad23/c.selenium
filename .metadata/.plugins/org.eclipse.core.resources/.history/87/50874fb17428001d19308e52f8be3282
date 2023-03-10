@@ -1,0 +1,12 @@
+package com.inheritance;
+
+public class ChildClass {
+	
+	ChildClass(){
+		System.out.println("Child class constructor");
+	}
+	
+	public static void main(String args[]) {
+		ChildClass c = new ChildClass();
+	}
+}

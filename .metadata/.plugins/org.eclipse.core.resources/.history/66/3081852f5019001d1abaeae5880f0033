@@ -1,0 +1,31 @@
+package com.FlowControlStatement;
+import java.util.Scanner;
+
+public class StudentResult {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		//System.out.println("enter empid");			
+		//int eid = s.nextInt();//to read the integer data
+	
+		System.out.println("Enter Student Name");		
+		String sname=s.next();
+		
+		System.out.println("Enter Student Percentage");			
+		double eper=s.nextDouble();
+		
+		/*if(eper>35 && eper>35) {
+			System.out.println("very good employee");
+			System.out.println( "Emp Name =   " +ename );
+			System.out.println( "Emp Salary = "+ esalary);
+		
+		} else {
+			System.out.println("good employee");
+			System.out.println( "E.Id =       " +eid );
+			System.out.println( "Emp Name =   " +ename );
+			System.out.println( "Emp Salary = "+ esalary);
+		}
+	  */
+		s.close();
+	}
+}
